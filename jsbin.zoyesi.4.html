@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by hunterhawes13 (http://jsbin.com/zoyesi/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+function callLater(timeout, callback) {
+if (typeof timeout !== "number"){
+  callback = timeout;
+  timeout = 4000;
+  console.log(timeout);
+}
+  setTimeout(callback, timeout);
+  
+}  
+
+callLater(function(){
+         console.log("Minneapolis");
+});
+
+</script>
+</body>
+</html>
